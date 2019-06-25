@@ -1,0 +1,11 @@
+D:\Project\asp_net_core\cookbook\cookbook\bin\Debug\netcoreapp2.2\cookbook.deps.json
+D:\Project\asp_net_core\cookbook\cookbook\bin\Debug\netcoreapp2.2\cookbook.runtimeconfig.json
+D:\Project\asp_net_core\cookbook\cookbook\bin\Debug\netcoreapp2.2\cookbook.runtimeconfig.dev.json
+D:\Project\asp_net_core\cookbook\cookbook\bin\Debug\netcoreapp2.2\cookbook.dll
+D:\Project\asp_net_core\cookbook\cookbook\bin\Debug\netcoreapp2.2\cookbook.pdb
+D:\Project\asp_net_core\cookbook\cookbook\obj\Debug\netcoreapp2.2\cookbook.csprojAssemblyReference.cache
+D:\Project\asp_net_core\cookbook\cookbook\obj\Debug\netcoreapp2.2\cookbook.csproj.CoreCompileInputs.cache
+D:\Project\asp_net_core\cookbook\cookbook\obj\Debug\netcoreapp2.2\cookbook.AssemblyInfoInputs.cache
+D:\Project\asp_net_core\cookbook\cookbook\obj\Debug\netcoreapp2.2\cookbook.AssemblyInfo.cs
+D:\Project\asp_net_core\cookbook\cookbook\obj\Debug\netcoreapp2.2\cookbook.dll
+D:\Project\asp_net_core\cookbook\cookbook\obj\Debug\netcoreapp2.2\cookbook.pdb
