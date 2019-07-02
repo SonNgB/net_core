@@ -37,55 +37,125 @@ namespace cookbook
     //}
     #endregion
 
-
     #region 3.0 Pattern matching
 
-    public class Chapter1
-    {
-        public void OutputInfomation(object person)
-        {
-            //if (person is Student student)
-            //{
-            //    WriteLine($"Student {student.Name} {student.LastName} is enrolled for coursr {String.Join<int>(" ", student.CourseCodes)}");
-            //}
+    //public class Chapter1
+    //{
+    //    public void OutputInfomation(object person)
+    //    {
+    //        //if (person is Student student)
+    //        //{
+    //        //    WriteLine($"Student {student.Name} {student.LastName} is enrolled for coursr {String.Join<int>(" ", student.CourseCodes)}");
+    //        //}
 
-            //if (person is Professor professor)
-            //{
-            //    WriteLine($"Professor {professor.Name} {professor.LastName} teaches {String.Join(" ", professor.TeacherSubject)}");
-            //}
+    //        //if (person is Professor professor)
+    //        //{
+    //        //    WriteLine($"Professor {professor.Name} {professor.LastName} teaches {String.Join(" ", professor.TeacherSubject)}");
+    //        //}
 
-            switch (person)
-            {
-                case Student student:
-                    WriteLine($"Student {student.Name} {student.LastName} is enrolled for coursr {String.Join<int>(" ", student.CourseCodes)}");
-                    break;
-                case Professor professor:
-                    WriteLine($"Professor {professor.Name} {professor.LastName} teaches {String.Join(" ", professor.TeacherSubject)}");
-                    break;
-                case null:
-                    WriteLine($"Object {nameof(person)} is null");
-                    break;
-                default:
-                    WriteLine("Unknown object detected");
-                    break;
-            }
+    //        switch (person)
+    //        {
+    //            case Student student:
+    //                WriteLine($"Student {student.Name} {student.LastName} is enrolled for coursr {String.Join<int>(" ", student.CourseCodes)}");
+    //                break;
+    //            case Professor professor:
+    //                WriteLine($"Professor {professor.Name} {professor.LastName} teaches {String.Join(" ", professor.TeacherSubject)}");
+    //                break;
+    //            case null:
+    //                WriteLine($"Object {nameof(person)} is null");
+    //                break;
+    //            default:
+    //                WriteLine("Unknown object detected");
+    //                break;
+    //        }
 
-        }
-    }
+    //    }
+    //}
 
-    public class Student
-    {
-        public string Name { get; set; }
-        public string LastName { get; set; }
-        public List<int> CourseCodes { get; set; }
-    }
+    //public class Student
+    //{
+    //    public string Name { get; set; }
+    //    public string LastName { get; set; }
+    //    public List<int> CourseCodes { get; set; }
+    //}
 
-    public class Professor
-    {
-        public string Name { get; set; }
-        public string LastName { get; set; }
-        public List<string> TeacherSubject { get; set; }
-    }
+    //public class Professor
+    //{
+    //    public string Name { get; set; }
+    //    public string LastName { get; set; }
+    //    public List<string> TeacherSubject { get; set; }
+    //}
     #endregion
 
+    #region 5.0 Deconstructor
+    //public class Chapter1
+    //{
+
+    //}
+
+    //public class Student
+    //{
+    //    public string Name { get; set; }
+    //    public string LastName { get; set; }
+    //    public List<int> CourseCode { get; set; }       
+    //}
+
+    //public static class ExtentionMethodClass
+    //{
+    //    public static void Deconstruct(this Student student , out string name, out string lastName)
+    //    {
+    //        name = student.Name;
+    //        lastName = student.LastName;
+    //    }
+    //}
+    #endregion
+
+    #region 6.0 Local function
+    //public class Chapter1
+    //{
+    //    public int getSum(int a, int b)
+    //    {
+    //        int result = 0;
+
+    //        result = calc(a, b);
+
+    //        int calc(int x, int y)
+    //        {
+    //            return x + y;
+    //        }
+
+    //        result = calc(5, 6);
+
+    //        return result;
+    //    }
+    //}
+    #endregion
+
+    #region  7.0 Ref return and locals
+    public class Chapter1
+    {
+        public int GetLargest(int a, int b)
+        {
+            if (a > b)
+            {
+                return a;
+            }
+            else
+            {
+                return b;
+            }
+        }
+        public ref int GetLargest( ref int a,ref int b)
+        {
+            if (a > b)
+            {
+                return ref a;
+            }
+            else
+            {
+                return ref b;
+            }
+        }
+    }
+    #endregion
 }
